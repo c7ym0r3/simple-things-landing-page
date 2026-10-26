@@ -1,0 +1,124 @@
+.hero {
+  overflow: hidden;
+}
+
+.hero-container {
+  min-height: 540px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(440px, 42%);
+  padding-bottom: 8px;
+}
+
+.hero h1 {
+  margin: 0 0 31px;
+  color: #4f5b6b;
+  font-size: clamp(48px, 4.1vw, 60px);
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 405px;
+  margin: 0;
+  color: #85849f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.catalog-button {
+  width: 255px;
+  height: 70px;
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 20px;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.catalog-button:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero-visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(100%, 540px);
+  display: block;
+  pointer-events: none;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-container {
+    min-height: 410px;
+  }
+
+  .hero-copy {
+    width: min(310px, 52%);
+  }
+
+  .hero-visual {
+    width: min(270px, 42%);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .hero-container {
+    min-height: 0;
+    padding-block: 0;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero h1 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  .hero p {
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .catalog-button {
+    width: 144px;
+    height: 51px;
+    margin-top: 21px;
+    font-size: 18px;
+  }
+}

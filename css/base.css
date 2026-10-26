@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  color: #4f5b6b;
+  background: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --container-margin: 165px;
+  --container-width: 1100px;
+  --accent: #706bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: var(--container-margin);
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  :root {
+    --container-width: 690px;
+    --container-margin: 39px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1269px) {
+  :root {
+    --container-width: 1100px;
+    --container-margin: max(48px, calc((100vw - var(--container-width)) / 2));
+  }
+}
+
+@media (min-width: 1270px) {
+  :root {
+    --container-margin: max(165px, calc((100vw - var(--container-width)) / 2));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  :root {
+    --container-width: 510px;
+    --container-margin: 33px;
+  }
+}
+
+@media (max-width: 319px) {
+  :root {
+    --container-width: 100%;
+    --container-margin: 16px;
+  }
+}

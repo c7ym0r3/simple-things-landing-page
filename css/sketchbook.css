@@ -1,0 +1,127 @@
+.sketchbook-section {
+  overflow: hidden;
+}
+
+.sketchbook-container {
+  min-height: 520px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sketchbook-copy {
+  width: 390px;
+  position: relative;
+  z-index: 1;
+}
+
+.sketchbook-copy h2 {
+  margin: 0 0 8px;
+  color: #626262;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.sketchbook-copy p {
+  margin: 0;
+  color: #85849f;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.sketchbook-copy .catalog-button {
+  margin-top: 30px;
+}
+
+.sketchbook-image {
+  width: 730px;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+.sketchbook-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .sketchbook-container {
+    min-height: 410px;
+  }
+
+  .sketchbook-copy {
+    width: 320px;
+  }
+
+  .sketchbook-image {
+    width: min(430px, calc(100% - 280px));
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 769px) {
+  .sketchbook-copy {
+    transform: translateY(-70px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .sketchbook-container {
+    min-height: 410px;
+  }
+
+  .sketchbook-copy {
+    width: 320px;
+  }
+
+  .sketchbook-image {
+    width: min(690px, calc(100% - 300px));
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .sketchbook-container {
+    min-height: 0;
+    padding-block: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .sketchbook-copy {
+    width: 100%;
+  }
+
+  .sketchbook-image {
+    flex: none;
+  }
+
+  .sketchbook-copy h2 {
+    font-size: 30px;
+  }
+
+  .sketchbook-copy p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .sketchbook-copy .catalog-button {
+    margin-top: 21px;
+  }
+
+  .sketchbook-image {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+  }
+}

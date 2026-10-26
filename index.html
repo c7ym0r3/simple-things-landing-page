@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple — простые вещи из бумаги." />
+    <title>Simple — простые вещи из бумаги</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/paper.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/brands.css" />
+    <link rel="stylesheet" href="css/sketchbook.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="#" aria-label="Simple — на главную">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-dot"></span>
+            <span class="brand-word">simple</span>
+            <span class="brand-pill"></span>
+            <span class="brand-dot"></span>
+          </span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Основная навигация">
+          <a href="#catalog">Продукция</a>
+          <a href="#materials">Материалы</a>
+          <a href="#about">О нас</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18"></path>
+          </svg>
+        </button>
+
+        <div class="header-actions">
+          <button class="icon-button" type="button" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="7.2"></circle>
+              <path d="m16.1 16.1 4.3 4.3"></path>
+            </svg>
+          </button>
+          <a class="icon-button login-link" href="#login" aria-label="Войти">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 5h6v14h-6"></path>
+              <path d="M3 12h13m-5-5 5 5-5 5"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-label="Мобильная навигация"
+      hidden
+    >
+      <button
+        class="icon-button menu-close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m5 5 14 14M19 5 5 19"></path>
+        </svg>
+      </button>
+      <a href="#catalog">Продукция</a>
+      <a href="#materials">Материалы</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <h1 id="hero-title">Простые вещи.<br />Из бумаги</h1>
+            <p>
+              Бумага (предположительно от итал. bombagia, первоисточником же
+              считается иранский) — волокнистый материал с минеральными
+              добавками.
+            </p>
+            <a class="catalog-button" href="#catalog">Каталог</a>
+          </div>
+          <picture class="hero-visual">
+            <source
+              media="(max-width: 576px)"
+              srcset="assets/hero-510.png"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/hero-690.png"
+            />
+            <img
+              src="assets/hero-1110.png"
+              width="540"
+              height="560"
+              alt="Бумажная упаковка Simple"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="paper-section" aria-labelledby="paper-title">
+        <div class="container paper-container">
+          <div class="paper-variants" aria-label="Варианты результата">
+            <article class="paper-variant">
+              <img class="paper-sample" src="assets/v1.png" alt="" />
+              <div>
+                <h3>V.1</h3>
+                <p>Результат вашего обучения</p>
+              </div>
+            </article>
+            <article class="paper-variant">
+              <img class="paper-sample" src="assets/v2.png" alt="" />
+              <div>
+                <h3>V.2</h3>
+                <p>Результат вашего обучения</p>
+              </div>
+            </article>
+            <article class="paper-variant">
+              <img class="paper-sample" src="assets/v3.png" alt="" />
+              <div>
+                <h3>V.3</h3>
+                <p>Результат вашего обучения</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="paper-feature">
+            <img
+              class="paper-feature-image"
+              src="assets/opened%20paper.png"
+              alt="Образцы складывания и белый бумажный лист"
+            />
+            <div class="paper-feature-copy">
+              <h2 id="paper-title">Максимальная<br />белизна</h2>
+              <p>
+                Для повышения белизны, гладкости и мягкости в состав бумажной
+                массы вводят белые минеральные вещества: мел, тальк, каолин и
+                др. Эта операция называется наполнением.
+              </p>
+              <p>
+                Отлив бумажного листа осуществляют на бумагоделательной машине,
+                важнейшей частью которой является непрерывно движущаяся (как
+                транспортер) металлическая или капроновая сетка.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section" aria-label="Продукция">
+        <div class="container products-container">
+          <article class="product-card">
+            <div class="product-image-slot" aria-hidden="true">
+              <img src="./assets/package.webp" alt="" />
+            </div>
+            <h2>Упаковка</h2>
+            <p class="product-quantity">Тираж: от 50 штук</p>
+            <p class="product-description">
+              Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+              различные формы и расцветки, изготовим форму под заказ.
+            </p>
+            <a class="product-link" href="#packaging">
+              Подробнее <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-slot" aria-hidden="true">
+              <img src="./assets/baggs.webp" alt="baggs" />
+            </div>
+            <h2>Пакеты</h2>
+            <p class="product-quantity">Тираж: от 200 штук</p>
+            <p class="product-description">
+              С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+              картон, крафт-бумага. Различные расцветки и дизайн.
+            </p>
+            <a class="product-link" href="#bags">
+              Подробнее <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-slot" aria-hidden="true">
+              <img src="./assets/cases.webp" alt="" />
+            </div>
+            <h2>Кейсы</h2>
+            <p class="product-quantity">Тираж: от 30 штук</p>
+            <p class="product-description">
+              Подойдет для документов и других бумаг. Различные расцветки,
+              размеры и плотность. Материал: прессованная бумага.
+            </p>
+            <a class="product-link" href="#cases">
+              Подробнее <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-slot" aria-hidden="true">
+              <img src="./assets/other.webp" alt="" />
+            </div>
+            <h2>Другие изделия</h2>
+            <p class="product-quantity">Тираж: от 100 штук</p>
+            <p class="product-description">
+              Нестандартные упаковки, кейсы и другие изделия различных размеров
+              и конфигураций. Изготовим в кратчайшие сроки.
+            </p>
+            <a class="product-link" href="#other-products">
+              Подробнее <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="brands-section" aria-label="Бренды бумаги">
+        <div class="brands-container">
+          <div class="brands-marquee">
+            <div class="brands-track" aria-hidden="true">
+              <div class="brand-slide">
+                <img src="assets/hahnemuehle-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/canson-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/royal-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/fabriano-logo.svg" alt="" />
+              </div>
+            </div>
+            <div class="brands-track" aria-hidden="true">
+              <div class="brand-slide">
+                <img src="assets/hahnemuehle-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/canson-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/royal-logo.svg" alt="" />
+              </div>
+              <div class="brand-slide">
+                <img src="assets/fabriano-logo.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sketchbook-section" aria-labelledby="sketchbook-title">
+        <div class="container sketchbook-container">
+          <div class="sketchbook-copy">
+            <h2 id="sketchbook-title">Simple скетчбук</h2>
+            <p>
+              80 листов, твердая обложка, бумага Fabriano 200 г/м². Подойдет и
+              для графики и для акварели. Для самых смелых творческих замыслов!
+            </p>
+            <a class="catalog-button" href="#buy-sketchbook">Купить</a>
+          </div>
+          <picture class="sketchbook-image">
+            <source
+              media="(max-width: 576px)"
+              srcset="assets/book-mobile.png"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/book-690.png"
+            />
+            <img
+              src="assets/book-1110.png"
+              alt="Открытый скетчбук с рисунком"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
